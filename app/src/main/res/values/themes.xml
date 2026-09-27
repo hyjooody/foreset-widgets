@@ -6,4 +6,13 @@
         <item name="android:colorAccent">#7E9A6B</item>
         <item name="android:windowBackground">@color/paper</item>
     </style>
+
+    <style name="HomeTheme" parent="@android:style/Theme.Material.Wallpaper.NoTitleBar">
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:colorAccent">#B7C48A</item>
+    </style>
 </resources>

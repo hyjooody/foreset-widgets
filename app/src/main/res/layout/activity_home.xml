@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/home_content" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="10dp" android:paddingBottom="6dp">
+
+        <!-- ===== 상단 패널 ===== -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="23"
+            android:background="@drawable/bg_panel_big" android:orientation="horizontal" android:padding="9dp">
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.15"
+                android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <FrameLayout android:id="@+id/t_mini" android:layout_width="0dp" android:layout_height="match_parent"
+                        android:layout_weight="1" android:background="@drawable/bg_tile" android:padding="7dp">
+                        <com.forestwidgets.ClockView android:id="@+id/mini_clock"
+                            android:layout_width="match_parent" android:layout_height="match_parent" />
+                    </FrameLayout>
+                    <LinearLayout android:id="@+id/t_todo_sum" android:layout_width="0dp" android:layout_height="match_parent"
+                        android:layout_marginStart="7dp" android:layout_weight="1.6" android:background="@drawable/bg_tile"
+                        android:gravity="center" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="오늘 할 일" android:textColor="#CCFFFFFF" android:textSize="10sp" />
+                        <TextView android:id="@+id/todo_sum" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium" android:text="-" android:textColor="#FFFFFF" android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.25"
+                    android:layout_marginTop="7dp" android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/t_digital" android:layout_width="0dp" android:layout_height="match_parent"
+                        android:layout_weight="1.6" android:background="@drawable/bg_tile" android:gravity="center"
+                        android:orientation="vertical">
+                        <TextClock android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:format12Hour="hh:mm" android:format24Hour="HH:mm" android:fontFamily="sans-serif-medium"
+                            android:letterSpacing="0.05" android:textColor="#FFFFFF" android:textSize="28sp" />
+                        <TextClock android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:format12Hour="MM-dd EEE" android:format24Hour="MM-dd EEE"
+                            android:textColor="#CCFFFFFF" android:textSize="10sp" />
+                    </LinearLayout>
+                    <FrameLayout android:id="@+id/t_battery" android:layout_width="0dp" android:layout_height="match_parent"
+                        android:layout_marginStart="7dp" android:layout_weight="1" android:background="@drawable/bg_tile">
+                        <ImageView android:id="@+id/battery_ring" android:layout_width="46dp" android:layout_height="46dp"
+                            android:layout_gravity="center" />
+                        <TextView android:id="@+id/battery_text" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_gravity="center" android:fontFamily="sans-serif-medium" android:textColor="#FFFFFF" android:textSize="11sp" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginStart="7dp"
+                android:layout_weight="1" android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/t_calendar" android:layout_width="0dp" android:layout_height="match_parent"
+                        android:layout_weight="1.5" android:background="@drawable/bg_tile" android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView android:id="@+id/cal_day" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium" android:letterSpacing="0.12" android:textColor="#E6FFFFFF" android:textSize="8sp" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp" android:gravity="center_vertical" android:orientation="horizontal">
+                            <TextView android:id="@+id/cal_prev" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:textColor="#B3FFFFFF" android:textSize="11sp" />
+                            <TextView android:id="@+id/cal_today" android:layout_width="24dp" android:layout_height="24dp"
+                                android:layout_marginStart="6dp" android:layout_marginEnd="6dp" android:background="@drawable/bg_today"
+                                android:fontFamily="sans-serif-medium" android:gravity="center" android:textColor="#FFFFFF" android:textSize="11sp" />
+                            <TextView android:id="@+id/cal_next" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:textColor="#B3FFFFFF" android:textSize="11sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <FrameLayout android:id="@+id/t_camera" android:layout_width="0dp" android:layout_height="match_parent"
+                        android:layout_marginStart="7dp" android:layout_weight="1" android:background="@drawable/bg_tile">
+                        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_gravity="center"
+                            android:src="@drawable/ic_camera" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.25"
+                    android:layout_marginTop="7dp" android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/t_year" android:layout_width="0dp" android:layout_height="match_parent"
+                        android:layout_weight="1.5" android:background="@drawable/bg_tile" android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView android:id="@+id/year_text" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium" android:textColor="#FFFFFF" android:textSize="20sp" />
+                        <TextView android:id="@+id/year_sub" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textColor="#CCFFFFFF" android:textSize="9sp" />
+                    </LinearLayout>
+                    <FrameLayout android:id="@+id/t_search" android:layout_width="0dp" android:layout_height="match_parent"
+                        android:layout_marginStart="7dp" android:layout_weight="1" android:background="@drawable/bg_tile">
+                        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_gravity="center"
+                            android:src="@drawable/ic_search" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ===== 할 일 + 앱 박스 ===== -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="20"
+            android:layout_marginTop="12dp" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/todo_card" android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:background="@drawable/bg_glass" android:orientation="vertical"
+                android:paddingStart="14dp" android:paddingTop="8dp" android:paddingEnd="10dp" android:paddingBottom="6dp">
+                <TextView android:id="@+id/todo_title" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:fontFamily="casual" android:text="To do list" android:textColor="#FFFFFF" android:textSize="16sp" />
+                <LinearLayout android:id="@+id/todo_list" android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginStart="12dp"
+                android:layout_weight="1" android:orientation="vertical">
+                <LinearLayout android:id="@+id/box0" android:layout_width="match_parent" android:layout_height="0dp"
+                    android:layout_weight="1" android:background="@drawable/bg_glass" android:orientation="vertical" android:padding="8dp" />
+                <LinearLayout android:id="@+id/box1" android:layout_width="match_parent" android:layout_height="0dp"
+                    android:layout_marginTop="10dp" android:layout_weight="1" android:background="@drawable/bg_glass"
+                    android:orientation="vertical" android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ===== 앱 박스 + 큰 시계 ===== -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="20"
+            android:layout_marginTop="12dp" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout android:id="@+id/box2" android:layout_width="match_parent" android:layout_height="0dp"
+                    android:layout_weight="1" android:background="@drawable/bg_glass" android:orientation="vertical" android:padding="8dp" />
+                <LinearLayout android:id="@+id/box3" android:layout_width="match_parent" android:layout_height="0dp"
+                    android:layout_marginTop="10dp" android:layout_weight="1" android:background="@drawable/bg_glass"
+                    android:orientation="vertical" android:padding="8dp" />
+            </LinearLayout>
+            <com.forestwidgets.ClockView android:id="@+id/big_clock" android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_marginStart="12dp" android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- ===== 원형 아이콘 바 ===== -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="11"
+            android:layout_marginTop="14dp" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/bar0" android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:background="@drawable/bg_pill" android:gravity="center_vertical"
+                android:orientation="horizontal" android:paddingStart="4dp" android:paddingEnd="4dp" />
+            <LinearLayout android:id="@+id/bar1" android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_marginStart="10dp" android:layout_weight="1" android:background="@drawable/bg_pill"
+                android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="4dp" android:paddingEnd="4dp" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/handle" android:layout_width="match_parent" android:layout_height="30dp"
+            android:gravity="center" android:text="︿" android:textColor="#CCFFFFFF" android:textSize="16sp" />
+
+        <!-- ===== 독 ===== -->
+        <LinearLayout android:id="@+id/dock" android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="10" android:gravity="center_vertical" android:orientation="horizontal" />
+    </LinearLayout>
+    </LinearLayout>
+
+    <!-- ===== 앱 서랍 ===== -->
+    <LinearLayout android:id="@+id/drawer" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="#EB44524F" android:orientation="vertical" android:visibility="gone">
+        <LinearLayout android:id="@+id/drawer_inner" android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical" android:paddingStart="12dp" android:paddingEnd="12dp">
+            <EditText android:id="@+id/search" android:layout_width="match_parent" android:layout_height="46dp"
+                android:layout_marginTop="14dp" android:layout_marginBottom="10dp" android:background="@drawable/bg_search"
+                android:hint="앱 검색" android:importantForAutofill="no" android:inputType="text" android:maxLines="1"
+                android:paddingStart="18dp" android:paddingEnd="18dp" android:textColor="#FFFFFF"
+                android:textColorHint="#99FFFFFF" android:textSize="15sp" />
+            <GridView android:id="@+id/grid" android:layout_width="match_parent" android:layout_height="match_parent"
+                android:clipToPadding="false" android:horizontalSpacing="4dp" android:numColumns="4"
+                android:paddingBottom="12dp" android:scrollbars="none" android:stretchMode="columnWidth"
+                android:verticalSpacing="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

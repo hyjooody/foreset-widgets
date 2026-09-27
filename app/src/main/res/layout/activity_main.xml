@@ -4,6 +4,19 @@
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
         android:orientation="vertical" android:padding="18dp">
 
+
+        <!-- 한 번에 적용 -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp" android:background="@drawable/bg_card" android:orientation="vertical" android:padding="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🌲 숲 홈 한 번에 적용하기" android:textColor="@color/ink" android:textSize="19sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                android:lineSpacingExtra="3dp" android:textColor="#6A7773" android:textSize="13sp"
+                android:text="배경화면, 위젯 배치, 모든 앱 아이콘이 한 번에 숲 테마로 바뀌어요. 아래 버튼을 누른 뒤 뜨는 창에서 「숲 홈」을 기본 홈 앱으로 골라주세요." />
+            <Button android:id="@+id/btn_apply_all" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:text="한 번에 적용하기" />
+        </LinearLayout>
+
         <!-- 배경화면 -->
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
             android:background="@drawable/bg_card" android:orientation="vertical" android:padding="16dp">

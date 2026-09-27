@@ -11,8 +11,8 @@ android {
         applicationId = "com.forestwidgets"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "2.0"
     }
 
     // 고정 서명키: 나중에 업데이트할 때 지우지 않고 덮어쓰기 설치가 가능
