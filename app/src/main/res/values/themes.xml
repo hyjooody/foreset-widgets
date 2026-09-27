@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ForestTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">#5E7268</item>
+        <item name="android:colorPrimaryDark">#4A5C54</item>
+        <item name="android:colorAccent">#7E9A6B</item>
+        <item name="android:windowBackground">@color/paper</item>
+    </style>
+</resources>

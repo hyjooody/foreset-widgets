@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_glass" android:paddingStart="6dp" android:paddingEnd="6dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center_vertical" android:orientation="horizontal">
+        <LinearLayout android:id="@+id/c_slot0" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <FrameLayout android:layout_width="42dp" android:layout_height="42dp"
+                android:background="@drawable/bg_circle_glass">
+                <ImageView android:id="@+id/c_icon0" android:layout_width="30dp" android:layout_height="30dp"
+                    android:layout_gravity="center" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <TextView android:id="@+id/c_label0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" android:ellipsize="end" android:maxLines="1"
+                android:textColor="#CCFFFFFF" android:textSize="9sp" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/c_slot1" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <FrameLayout android:layout_width="42dp" android:layout_height="42dp"
+                android:background="@drawable/bg_circle_glass">
+                <ImageView android:id="@+id/c_icon1" android:layout_width="30dp" android:layout_height="30dp"
+                    android:layout_gravity="center" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <TextView android:id="@+id/c_label1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" android:ellipsize="end" android:maxLines="1"
+                android:textColor="#CCFFFFFF" android:textSize="9sp" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/c_slot2" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <FrameLayout android:layout_width="42dp" android:layout_height="42dp"
+                android:background="@drawable/bg_circle_glass">
+                <ImageView android:id="@+id/c_icon2" android:layout_width="30dp" android:layout_height="30dp"
+                    android:layout_gravity="center" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <TextView android:id="@+id/c_label2" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" android:ellipsize="end" android:maxLines="1"
+                android:textColor="#CCFFFFFF" android:textSize="9sp" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/c_slot3" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <FrameLayout android:layout_width="42dp" android:layout_height="42dp"
+                android:background="@drawable/bg_circle_glass">
+                <ImageView android:id="@+id/c_icon3" android:layout_width="30dp" android:layout_height="30dp"
+                    android:layout_gravity="center" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <TextView android:id="@+id/c_label3" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" android:ellipsize="end" android:maxLines="1"
+                android:textColor="#CCFFFFFF" android:textSize="9sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/hint" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center" android:text="탭해서 앱 고르기" android:textColor="#FFFFFF"
+        android:textSize="12sp" android:visibility="gone" />
+</FrameLayout>

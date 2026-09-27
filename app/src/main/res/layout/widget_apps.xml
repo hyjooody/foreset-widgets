@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_glass" android:padding="10dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center" android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView android:id="@+id/app0" android:layout_width="0dp" android:layout_height="26dp"
+                android:layout_weight="1" android:scaleType="fitCenter" />
+            <ImageView android:id="@+id/app1" android:layout_width="0dp" android:layout_height="26dp"
+                android:layout_weight="1" android:scaleType="fitCenter" />
+            <ImageView android:id="@+id/app2" android:layout_width="0dp" android:layout_height="26dp"
+                android:layout_weight="1" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:orientation="horizontal">
+            <ImageView android:id="@+id/app3" android:layout_width="0dp" android:layout_height="26dp"
+                android:layout_weight="1" android:scaleType="fitCenter" />
+            <ImageView android:id="@+id/app4" android:layout_width="0dp" android:layout_height="26dp"
+                android:layout_weight="1" android:scaleType="fitCenter" />
+            <ImageView android:id="@+id/app5" android:layout_width="0dp" android:layout_height="26dp"
+                android:layout_weight="1" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/hint" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center" android:text="탭해서 앱 고르기" android:textColor="#FFFFFF"
+        android:textSize="12sp" android:visibility="gone" />
+</FrameLayout>

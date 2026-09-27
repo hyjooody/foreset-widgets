@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/paper">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="18dp">
+
+        <!-- 배경화면 -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/bg_card" android:orientation="vertical" android:padding="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="① 숲 배경화면" android:textColor="@color/ink" android:textSize="17sp" android:textStyle="bold" />
+            <ImageView android:layout_width="120dp" android:layout_height="260dp" android:layout_gravity="center"
+                android:layout_marginTop="10dp" android:scaleType="centerCrop" android:src="@drawable/forest_wallpaper" />
+            <Button android:id="@+id/btn_wall_home" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:text="홈 화면에 적용" />
+            <Button android:id="@+id/btn_wall_both" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="홈 + 잠금 화면에 적용" />
+        </LinearLayout>
+
+        <!-- 할 일 -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:background="@drawable/bg_card" android:orientation="vertical" android:padding="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="② 할 일 목록 위젯 내용" android:textColor="@color/ink" android:textSize="17sp" android:textStyle="bold" />
+            <EditText android:id="@+id/todo0" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="할 일 1 (비워두면 숨김)" android:inputType="text" android:maxLines="1" android:textSize="15sp" />
+            <EditText android:id="@+id/todo1" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="할 일 2 (비워두면 숨김)" android:inputType="text" android:maxLines="1" android:textSize="15sp" />
+            <EditText android:id="@+id/todo2" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="할 일 3 (비워두면 숨김)" android:inputType="text" android:maxLines="1" android:textSize="15sp" />
+            <EditText android:id="@+id/todo3" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="할 일 4 (비워두면 숨김)" android:inputType="text" android:maxLines="1" android:textSize="15sp" />
+            <EditText android:id="@+id/todo4" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="할 일 5 (비워두면 숨김)" android:inputType="text" android:maxLines="1" android:textSize="15sp" />
+            <Button android:id="@+id/btn_save_todo" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:text="저장하고 위젯에 반영" />
+            <Button android:id="@+id/btn_reset_todo" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="체크 전부 해제" />
+        </LinearLayout>
+
+        <!-- 파스텔 아이콘 -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:background="@drawable/bg_card" android:orientation="vertical" android:padding="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="③ 파스텔 아이콘 만들기" android:textColor="@color/ink" android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                android:text="앱을 고르고 색을 고르면, 그 색의 아이콘으로 된 바로가기가 홈 화면에 추가돼요. 원래 아이콘은 홈에서 지워주세요 (앱은 안 지워져요)."
+                android:textColor="#6A7773" android:textSize="13sp" />
+            <Button android:id="@+id/btn_pastel" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:text="앱 골라서 아이콘 만들기" />
+        </LinearLayout>
+
+        <!-- 안내 -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:background="@drawable/bg_card" android:orientation="vertical" android:padding="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="④ 위젯 추가하는 법" android:textColor="@color/ink" android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                android:lineSpacingExtra="4dp" android:textColor="#6A7773" android:textSize="13sp"
+                android:text="홈 화면 빈 곳 길게 누르기 → 위젯 → 「숲 위젯」 선택 → 원하는 위젯을 끌어다 놓기.\n\n앱 박스 / 원형 아이콘 바는 놓자마자 앱 선택 화면이 떠요. 나중에 바꾸려면 위젯을 길게 눌러 「설정」(또는 톱니바퀴)을 누르세요.\n\n할 일 목록은 줄을 탭하면 체크돼요. 제목(To do list)을 탭하면 이 화면이 열려요." />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

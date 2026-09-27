@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">숲 위젯</string>
+    <string name="w_digital">숲 · 디지털 시계</string>
+    <string name="w_analog">숲 · 아날로그 시계</string>
+    <string name="w_calendar">숲 · 요일 캘린더</string>
+    <string name="w_battery">숲 · 배터리</string>
+    <string name="w_todo">숲 · 할 일 목록</string>
+    <string name="w_apps">숲 · 앱 박스 (6칸)</string>
+    <string name="w_circles">숲 · 원형 아이콘 바 (4칸)</string>
+    <string name="d_digital">시간과 날짜</string>
+    <string name="d_analog">배경이 비치는 투명 시계</string>
+    <string name="d_calendar">어제·오늘·내일</string>
+    <string name="d_battery">배터리 링 (탭하면 새로고침)</string>
+    <string name="d_todo">체크하면 흐려지는 할 일 목록</string>
+    <string name="d_apps">반투명 박스 안의 작은 앱 아이콘</string>
+    <string name="d_circles">동그란 단색 앱 아이콘</string>
+</resources>
